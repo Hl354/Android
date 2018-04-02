@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#faf8ef">
+	
+    <LinearLayout 
+        android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"
+   		android:orientation="horizontal"
+   		android:layout_marginTop="50dp"
+   		android:gravity="center"
+        >
+        
+        <com.example.newLayout.MyTextView
+            android:id="@+id/tv_score"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="分数:0"
+	        android:textColor="#ffffff" 
+	        android:layout_margin="10dp"
+	        android:padding="5dp"
+	        android:textSize="25sp">
+		</com.example.newLayout.MyTextView>
+		
+        <com.example.newLayout.MyTextView
+            android:id="@+id/tv_best"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="最好:0"
+	        android:textColor="#ffffff" 
+	        android:layout_margin="10dp"
+	        android:padding="5dp"
+	        android:textSize="25sp">
+		</com.example.newLayout.MyTextView>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+    	 android:layout_width="fill_parent"
+		 android:layout_height="wrap_content"
+		 android:orientation="horizontal"
+		 android:gravity="center">
+        
+         <com.example.newLayout.MyButton 
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+            android:text="@string/restart"
+            android:onClick="reStart"
+            android:layout_margin="10dp"
+	        android:textSize="25sp"
+            android:textColor="#ffffff"
+            >
+        </com.example.newLayout.MyButton>
+        
+    </LinearLayout>
+    
+    <com.example.newLayout.MyGridView 
+        android:id="@+id/game_view"
+        android:layout_width="fill_parent"
+		android:layout_height="0dp"
+        android:layout_weight="30"
+        android:background="#ffbbada0"
+        >
+        
+    </com.example.newLayout.MyGridView>
+    
+</LinearLayout>
